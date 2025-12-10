@@ -1,0 +1,191 @@
+/* ======================= */
+/* GITHUB BASE STYLE */
+/* ======================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, sans-serif;
+}
+
+body {
+    background: #0d1117;
+    color: #c9d1d9;
+}
+
+a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 12%;
+}
+
+/* ======================= */
+/* NAVBAR */
+/* ======================= */
+
+.navbar {
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    padding: 15px 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    margin-left: 18px;
+    opacity: 0.8;
+}
+
+.navbar a:hover {
+    opacity: 1;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #58a6ff;
+}
+
+/* ======================= */
+/* HOME SECTION */
+/* ======================= */
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-title {
+    font-size: 35px;
+}
+
+.blue {
+    color: #58a6ff;
+}
+
+.subtitle {
+    margin: 10px 0;
+    opacity: 0.8;
+}
+
+.bio {
+    max-width: 400px;
+    margin: 15px 0 25px;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.github-btn:hover {
+    background: #30363d;
+}
+
+.avatar {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #30363d;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ======================= */
+/* SECTION TITLE */
+/* ======================= */
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* ======================= */
+/* ABOUT */
+/* ======================= */
+
+.about-text {
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+/* ======================= */
+/* PROJECTS GRID */
+/* ======================= */
+
+.projects-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.repo-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+}
+
+.repo-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* ======================= */
+/* CONTACT */
+/* ======================= */
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* ======================= */
+/* FOOTER */
+/* ======================= */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #161b22;
+    border-top: 1px solid #30363d;
+}
+
+/* ======================= */
+/* REVEAL ANIMATION */
+/* ======================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.7s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
